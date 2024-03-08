@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import logoPic from '../../public/logosvg.svg'
+
+
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -13,21 +17,31 @@ import {
   Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
+  BriefcaseIcon,
+  ServerStackIcon
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Portfolio",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
+    name: "Services",
+    icon: ServerStackIcon,
   },
   {
-    name: "Docs",
+    name: "About",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
+  },
+  {
+    name: "Blog",
+    icon: Squares2X2Icon,
+  },
+  {
+    name: "Careers",
+    icon: BriefcaseIcon,
   },
 ];
 
@@ -68,9 +82,13 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
-          Material Tailwind
-        </Typography>
+        <Image   
+         width={100}
+          height={30}
+          alt="team work"
+          src={logoPic}
+          className="  "
+          />
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
@@ -82,7 +100,7 @@ export function Navbar() {
         <div className="hidden items-center gap-2 lg:flex">
           <Button variant="text">Sign In</Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
+            <Button color="gray">Contact</Button>
           </a>
         </div>
         <IconButton
@@ -111,7 +129,7 @@ export function Navbar() {
           <div className="mt-6 mb-4 flex items-center gap-2">
             <Button variant="text">Sign In</Button>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
+              <Button color="gray">Contact</Button>
             </a>
           </div>
         </div>

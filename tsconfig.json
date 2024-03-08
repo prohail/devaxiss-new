@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/testimonial.jsx", "src/app/skills.jsx", "src/app/resume.jsx", "src/app/projects.jsx", "src/app/popular-clients.jsx", "src/app/page.jsx", "src/app/layout.jsx", "src/app/hero.jsx", "src/app/contact-form.jsx", "src/app/clients.jsx"  ],
   "exclude": [
     "node_modules"
   ]
