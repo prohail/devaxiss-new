@@ -57,9 +57,9 @@ export function Projects() {
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          From mobile apps to website makeovers, we're here to make your digital
-          vision a reality. Let us bring innovation and expertise to your online
-          presence
+          From mobile apps to website makeovers, we&apos;re here to make your
+          digital vision a reality. Let us bring innovation and expertise to
+          your online presence
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
